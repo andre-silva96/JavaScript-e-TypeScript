@@ -1,0 +1,40 @@
+@charset 'UTF-8';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    min-width: 30vw;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lamp-img {
+    margin: auto;
+}
+
+.button {
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 80%;
+    margin: auto;
+    font-size: 1.5em;
+}
