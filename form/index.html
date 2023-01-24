@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Área de Cadastro</title>
+</head>
+<body>
+    <main class="container">
+        <section class="left-side">
+            <img src="assets/images/login_left_side.jpg" alt="Imagem de Computador para Área de Login">
+        </section>
+
+        <section class="right-side">
+            <h1>Área de Cadastro</h1>
+
+            <form method="POST" action="#">
+                <label for="">
+                    <legend>Nome:</legend>
+                    <input type="text" oninput="validateName()">
+                    <span class="span">Campo de Nome obrigatório</span>
+                </label>
+
+                <label for="">
+                    <legend>E-mail:</legend>
+                    <input type="email" name="email" id="input-email" oninput="validateEmail()">
+                    <span class="span">Campo de e-mail obrigatório</span>
+                </label>
+
+                <label for="">
+                    <legend>Senha:</legend>
+                    <input type="password" name="password" id="input-password" oninput="validatePassword()">
+                    <span class="span">A senha deve ter ao menos 8 caracteres</span>
+                </label>
+
+                <label for="">
+                    <legend>Confirme sua Senha:</legend>
+                    <input type="password" name="password" id="confirm-input-password" oninput="confirmPassword()">
+                    <span class="span">Senhas não são iguais</span>
+                </label>
+
+                <label for="">
+                    <input type="submit" value="Cadastrar" id="input-button">
+                </label>
+            </form>
+
+            <section class="acess-acount">
+                <p>
+                    Já tem uma conta? Faça seu <a href="#">Login</a>.
+                </p>
+            </section>
+        </section>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
