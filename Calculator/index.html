@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="shortcut icon" href="assets/image/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="display">
+            <div class="display-top">
+            </div>
+            <hr>
+            <div class="display-bottom"></div>
+        </section>
+
+        <section class="keyboard">
+            <section class="row-0">
+                <button class="operator-button" onclick="cleanDisplay()">C</button>
+                <button class="operator-button" onclick="backspace()">Del</button>
+                <button class="operator-button" onclick="calcNumber('%')">%</button>
+                <button class="operator-button" onclick="calcNumber('/')">&div;</button>
+            </section>
+
+            <section class="row-1">
+                <button class="number-buttons" onclick="calcNumber('1')">1</button>
+                <button class="number-buttons" onclick="calcNumber('2')">2</button>
+                <button class="number-buttons" onclick="calcNumber('3')">3</button>
+                <button class="operator-button" onclick="calcNumber('+')">+</button>
+            </section>
+
+            <section class="row-2">
+                <button class="number-buttons" onclick="calcNumber('4')">4</button>
+                <button class="number-buttons" onclick="calcNumber('5')">5</button>
+                <button class="number-buttons" onclick="calcNumber('6')">6</button>
+                <button class="operator-button" onclick="calcNumber('-')">-</button>
+            </section>
+
+            <section class="row-3">
+                <button class="number-buttons" onclick="calcNumber('7')">7</button>
+                <button class="number-buttons" onclick="calcNumber('8')">8</button>
+                <button class="number-buttons" onclick="calcNumber('9')">9</button>
+                <button class="operator-button" onclick="calcNumber('*')">x</button>
+            </section>
+
+            <section class="row-4">
+                <button class="number-buttons" onclick="calcNumber('0')">0</button>
+                <button class="number-buttons" onclick="calcNumber('.')">.</button>
+                <button class="equal-button operator-button" onclick="addNumbers()">=</button>
+            </section>
+        </section>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
