@@ -67,11 +67,28 @@ body {
     cursor: pointer;
     font-size: 1.2em;
     font-weight: bolder;
-    outline: none;
+    border: none;
+}
+
+.number-buttons:hover {
+    background-color: #ccc;
+}
+
+.operator-button {
+    background-color: #000;
+    color: #fff;
+}
+
+.operator-button:hover {
+    background-color: #444;
 }
 
 .equal-button {
     width: 43%;
     border-radius: 20px;
-    background-color: wheat;
+    background-color: #002a5b;
+}
+
+.equal-button:hover {
+    background-color: #0f437f;
 }
