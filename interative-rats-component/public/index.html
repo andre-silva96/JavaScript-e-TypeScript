@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Interative Rats Component | Front End Mentor</title>
+</head>
+<body>
+    <main class="container">
+        <section class="box-1">
+            <section class="logo-star-section">
+                <img src="assets/images/icon-star.svg" alt="Star Icon Page">
+            </section>
+            <section class="text-section">
+                <h1>How did we do?</h1>
+                <p>
+                    Please, let us know we did with your support request. All feedback is appreciated to help us improve our offering!
+                </p>
+            </section>
+            <section class="score-section">
+                <button class="score" data-score="1" onclick="viewScore(1)">1</button>
+                <button class="score" data-score="2" onclick="viewScore(2)">2</button>
+                <button class="score" data-score="3" onclick="viewScore(3)">3</button>
+                <button class="score" data-score="4" onclick="viewScore(4)">4</button>
+                <button class="score" data-score="5" onclick="viewScore(5)">5</button>
+            </section>
+            <section class="section-button" onclick="sendScore()"">
+                Submit
+            </section>
+        </section>
+
+        <section class="box-2">
+            <section class="img-section">
+                <img src="assets/images/illustration-thank-you.svg" alt="Thank you image">
+            </section>
+    
+            <section class="display-score"></section>
+    
+            <section class="text-section center">
+                <h1>Thank you!</h1>
+    
+                <p>
+                   We appreciated you taking the time to give a rating. If you ever need support, don't hesitate to get in touch!
+                </p>
+            </section>
+    
+        </section>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+    <!-- <script src="assets/js/page.js"></script> -->
+</body>
+</html>
