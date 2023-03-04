@@ -43,27 +43,23 @@ function viewScore(): void {
 
     score[3].addEventListener('click', (): void => {
         if(score[3].getAttribute('data-score') == '4') {
-            // score[3].classList.add('active');
-            // score[0].classList.remove('active');
-            // score[1].classList.remove('active');
-            // score[2].classList.remove('active');
-            // score[4].classList.remove('active');
+            score[3].classList.add('active');
+            score[0].classList.remove('active');
+            score[1].classList.remove('active');
+            score[2].classList.remove('active');
+            score[4].classList.remove('active');
             starNumber = 4;
-            switchClass(starNumber);
-            returnScore(starNumber);
         }
     });
 
     score[4].addEventListener('click', (): void => {
         if(score[4].getAttribute('data-score') == '5') {
-            // score[4].classList.add('active');
-            // score[0].classList.remove('active');
-            // score[1].classList.remove('active');
-            // score[2].classList.remove('active');
-            // score[3].classList.remove('active');
+            score[4].classList.add('active');
+            score[0].classList.remove('active');
+            score[1].classList.remove('active');
+            score[2].classList.remove('active');
+            score[3].classList.remove('active');
             starNumber = 5;
-            switchClass(starNumber);
-            returnScore(starNumber);
         }
     });
 }
