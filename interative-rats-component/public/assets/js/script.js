@@ -45,6 +45,7 @@ function viewScore() {
             score[2].classList.remove('active');
             score[4].classList.remove('active');
             starNumber = 4;
+            returnScore(starNumber);
         }
     });
     score[4].addEventListener('click', () => {
@@ -55,6 +56,7 @@ function viewScore() {
             score[2].classList.remove('active');
             score[3].classList.remove('active');
             starNumber = 5;
+            returnScore(starNumber);
         }
     });
 }
