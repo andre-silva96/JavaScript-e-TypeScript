@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Apparel Project</title>
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="logo-section">
+            <picture>
+                <img src="./assets/images/logo.svg" alt="Base Apparel Logo">
+            </picture>
+        </section>
+
+        <section class="hero-section"></section>
+
+        <section class="text-section">
+            <h1>
+                <span>We're</span><br>
+                Coming <br> 
+                Soon
+            </h1>
+
+            <p>
+                Hello fellow shopers! We're currently building our new fashion sotore. Add your email below to stay up-to-date with announcements and our lanch deals.
+            </p>
+
+            <form action="#" method="get" onsubmit="return validateForm()">
+                <section class="form-section">
+                    <input type="text" name="input-email" id="input-email" class="input-email" placeholder="Email Address">
+                    <label for="input-email"></label>
+
+                    
+                    <button class="input-button" name="input-button"><img src="./assets/images/icon-arrow.svg" onclick="validateEmail()"></button>
+                    <label for="input-button"></label>
+
+                    <section class="error">
+                        <img src="./assets/images/icon-error.svg" alt="">
+                    </section>
+                </section>
+                <section class="span-error-message">
+                    <span class="error-message">Please provide a valid email</span>
+                </section>
+            </form>
+        </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
