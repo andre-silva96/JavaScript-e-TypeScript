@@ -11,7 +11,7 @@ function validateForm(): any {
 }
 
 function validateEmail(): void {
-    if(inputEmail.value !== regex) {
+    if(inputEmail.value !== regex && inputEmail.value == '') {
         messageError.style.display = 'block';
         imageError.style.display = 'block';
     } else if(inputEmail.value === regex) {
