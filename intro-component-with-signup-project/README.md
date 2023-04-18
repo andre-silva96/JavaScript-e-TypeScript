@@ -38,25 +38,21 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL:](https://github.com/andre-silva96/JavaScript-e-TypeScript/tree/main/intro-component-with-signup-project)
+- [Live Site URL:](https://andre-silva96.github.io/JavaScript-e-TypeScript/intro-component-with-signup-project/public/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
+- HTML 5
+- CSS properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
+- TypeScript
+- JavaScript
+- Mobile First
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@andre-silva96](https://www.frontendmentor.io/profile/andre-silva96)
+- LinkedIn - [@andresilva96](https://www.linkedin.com/in/andresilva96/)
