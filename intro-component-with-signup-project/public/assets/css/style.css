@@ -1,0 +1,215 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    /* Colors Section */
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --darkBlue: hsl(249, 10%, 26%);
+    --grayishBlue: hsl(246, 25%, 77%);
+    --white: hsl(0, 0%, 100%);
+    /* Font Section */
+    --font: 'Poppins', sans-serif;
+    /* Font Weights */
+    --regular: 400;
+    --medium: 500;
+    --semiBold: 600;
+    --bold: 700;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/bg-intro-mobile.png');
+    background-color: var(--red);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 35px 25px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 30px;
+}
+
+.text-side {
+    padding: 65px 0;
+}
+
+.text-side h1 {
+    text-align: center;
+    color: var(--white);
+    font-weight: var(--semiBold);
+    margin-bottom: 30px;
+}
+
+.text-side p {
+    color: var(--white);
+    text-align: center;
+    font-weight: var(--regular);
+}
+
+.promo {
+    background-color: var(--blue);
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px 35px;
+    margin-bottom: 20px;
+}
+
+.shadow {
+    box-shadow: 0px 10px 9px 0px rgba(0,0,0,0.35);
+}
+
+.promo p {
+    text-align: center;
+    color: var(--white);
+    font-weight: var(--regular);
+}
+
+.promo p span {
+    font-weight: var(--bold);
+}
+
+form {
+    padding: 25px;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.inputs-section {
+    margin-bottom: 5px;
+}
+
+.input {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-first-name,
+.input-last-name,
+.input-email,
+.input-password {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid var(--grayishBlue);
+    border-radius: 5px;
+    color: var(--darkBlue);
+    outline-color: var(--darkBlue);
+    font-weight: var(--bold);
+    position: relative;
+}
+
+.input-first-name::placeholder,
+.input-last-name::placeholder,
+.input-email::placeholder,
+.input-password::placeholder {
+    color: var(--grayishBlue);
+    font-weight: var(--bold);
+}
+
+.error-message {
+    display: none;
+    text-align: right;
+}
+
+.error-text-message {
+    font-size: 11px;
+    color: var(--red);
+    font-weight: var(--semiBold);
+    font-style: italic;
+    justify-self: flex-end;
+    align-self: center;
+}
+
+.icon-error {
+    display: none;
+    position: absolute;
+    margin-right: 20px;
+}
+
+.icon-error img {
+    width: 20px;
+}
+
+.border-error {
+    border: 1px solid var(--red);
+}
+
+.button {
+    width: 100%;
+    padding: 15px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    font-weight: var(--medium);
+    color: var(--white);
+    background-color: var(--green);
+    border: 0;
+    cursor: pointer;
+}
+
+.terms {
+    padding: 15px 15px 0 15px;
+}
+
+.terms p {
+    text-align: center;
+    font-size: 11px;
+    font-weight: var(--semiBold);
+    color: var(--grayishBlue);
+}
+
+.terms p a {
+    text-decoration: none;
+    color: var(--red);
+}
+
+@media (min-width: 860px) {
+    body {
+        display: flex;
+        background-image: url('../images/bg-intro-desktop.png');
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        flex-direction: row;
+        max-width: 1360px;
+        width: 80%;
+    }
+
+    .text-side {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 65px 40px;
+    }
+
+    .text-side h1 {
+        font-size: 2.5rem;
+    }
+
+    .promo {
+        margin-top: 20px;
+    }
+
+    .form-side {
+        width: 50%;
+    }
+}
